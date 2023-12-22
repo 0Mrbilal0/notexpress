@@ -1,8 +1,8 @@
 <?php
 
-namespace models;
+namespace Models;
 
-use models\AbstractModel;
+use Models\AbstractModel;
 
 class Category extends AbstractModel
 {
@@ -17,19 +17,22 @@ class Category extends AbstractModel
     ':image' => ''
   ];
 
-  public function getId()
+    /**
+     * Retrieves the ID of the object.
+     * @return int The ID of the object.
+     */
+  public function getId(): int
   {
     return $this->id;
   }
 
-  public function getName()
+  public function getName(): string
   {
     return $this->name;
   }
-  public function setName($name)
+  public function setName($name): static
   {
     $this->name = $name;
-
     return $this;
   }
 
