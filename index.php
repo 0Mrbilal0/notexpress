@@ -3,7 +3,7 @@
 require_once __DIR__ . '/autoloading.php';
 require_once __DIR__ . '/vendor/autoload.php';
 
-use controllers\Router;
+use Controllers\Router;
 
 $request = $_SERVER['REQUEST_URI'];
 
