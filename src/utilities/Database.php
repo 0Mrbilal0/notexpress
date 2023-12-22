@@ -1,6 +1,6 @@
 <?php
 
-namespace utilities;
+namespace Utilities;
 
 use PDO;
 use PDOException;
